@@ -1,6 +1,6 @@
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
-import List from "./pages/list/List";
+import ListPage from "./pages/list/ListPage";
 import Single from "./pages/single/Single";
 import New from "./pages/new/New";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -21,7 +21,7 @@ function App() {
             <Route path="login" element={<Login />} />
 
             <Route path="users">
-              <Route index element={<List />} />
+              <Route index element={<ListPage />} />
               <Route path=":userId" element={<Single />} />
               <Route
                 path="new"
@@ -30,7 +30,7 @@ function App() {
             </Route>
 
             <Route path="products">
-              <Route index element={<List />} />
+              <Route index element={<ListPage />} />
               <Route path=":productId" element={<Single />} />
               <Route
                 path="new"

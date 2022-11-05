@@ -1,12 +1,12 @@
 import Sidebar from "../../components/sidebar/Sidebar";
-import "./list.scss";
+import "./listPage.scss";
 import Navbar from "../../components/navbar/Navbar";
 import Datatable from "../../components/datatable/Datatable";
 import Table from "../../components/table/Table";
 import { Link } from "react-router-dom";
-const List = () => {
+const ListPage = () => {
   return (
-    <div className="list">
+    <div className="listPage">
       <Sidebar />
       <div className="listContainer">
         <Navbar />
@@ -16,4 +16,4 @@ const List = () => {
   );
 };
 
-export default List;
+export default ListPage;
