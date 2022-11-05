@@ -21,7 +21,7 @@ function App() {
             <Route path="login" element={<Login />} />
 
             <Route path="users">
-              <Route index element={<List pageType="users" />} />
+              <Route index element={<List />} />
               <Route path=":userId" element={<Single />} />
               <Route
                 path="new"
@@ -30,7 +30,7 @@ function App() {
             </Route>
 
             <Route path="products">
-              <Route index element={<List pageType="products" />} />
+              <Route index element={<List />} />
               <Route path=":productId" element={<Single />} />
               <Route
                 path="new"
